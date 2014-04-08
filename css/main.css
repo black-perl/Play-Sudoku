@@ -9,7 +9,7 @@ p h1 h2 h3 h4 h5 h6 body {
 }
 
 body{
-	background: #CCB59F;
+	background: #BB8F66;
 }
 
 
@@ -21,7 +21,7 @@ body #containerDiv {
 	position: absolute;
 	left: 430px;
 	top: 80px;
-	background-color: rgba(169, 169, 169, 0.58);
+	background-color: rgba(128, 91, 91, 0.58); /* child will inherit them */
 }
 
 body .innerBoxes{
@@ -37,5 +37,22 @@ body .rootBox{
 	width: 47px;
 	float: left;
 	border: solid rgba(122, 85, 187, 0.64) ;
-	border-collapse: inherit;
+	border-collapse: inherit; /* just check what it does */
+}
+
+body .textBoxes{
+	height: 47px;
+	/* line-height: 47px; */
+	width: 47px;
+	background-color: rgba(169, 169, 169, 0.58);
+	border: none;
+	font-weight: bold;
+	font-size: 35px;
+	/* text-indent: 2px;  not require as font-align will do the job */
+	text-align: center; /* for aligning text in the middle of the text boxes */
+	vertical-align: middle; /* but not working with font Georgia */
+	font-family: helvetica,serif;
+	color: rgb(25, 121, 75); /* color defines text color */
+	/* padding is distance of content box from the borders */
+	padding: 0px; /* removes the margin of the textboxes from the root boxes */
 }
