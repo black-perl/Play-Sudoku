@@ -19,8 +19,8 @@ body #containerDiv {
 	width: 495px;
 	border: solid rgba(122, 85, 187, 0.64)  5px;
 	position: absolute;
-	left: 430px;
-	top: 80px;
+	left: 700px;
+	top: 40px;
 	background-color: rgba(128, 91, 91, 0.58); /* child will inherit them */
 }
 
@@ -55,4 +55,23 @@ body .textBoxes{
 	color: rgb(25, 121, 75); /* color defines text color */
 	/* padding is distance of content box from the borders */
 	padding: 0px; /* removes the margin of the textboxes from the root boxes */
+}
+
+div #submitButton{
+	display: inline-block;
+	position: absolute;
+	top: 580px;
+	left: 880px;
+	background-color: #51b7e6;
+	text-align: center;
+	padding: 15px 20px;
+	color: #805575 !important;
+	text-decoration: none !important;
+	font-weight: bolder;
+	font-family: cursive;
+	font-size: 24px;
+	box-shadow: 0 1px 1px #35234D;
+	border-radius: 2px;
+	background-image: -webkit-linear-gradient(top, #51b7e6, #4dafdd);
+	margin-bottom: 20px;
 }
