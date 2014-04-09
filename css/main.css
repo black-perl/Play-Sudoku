@@ -90,12 +90,21 @@ div #submitButton{
 	text-indent: 30px;
 }
 
-#description p {
-
+#description ul {
+	font-family: cursive;
+	font-size: 25px;
+	color: rgb(25, 121, 75);
+	list-style-image: url(../media/bullet-icon.ico);
+	margin-left: 25px;
+	text-indent: 5px;
 }
 
+li{
+	margin-top: 5px;
+}
 #heading {
 	color: brown;
+	font-size: 30px;
 	border-bottom: solid 2px;
 	font-family: cursive;
 }
@@ -107,5 +116,5 @@ div #submitButton{
 	position: relative;
 	left: 100px;
 	/* bottom: 10px; */
-	top: 90px;
+	/* top: 50px; */
 }
