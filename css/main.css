@@ -75,3 +75,37 @@ div #submitButton{
 	background-image: -webkit-linear-gradient(top, #51b7e6, #4dafdd);
 	margin-bottom: 20px;
 }
+
+#description
+{
+	position: absolute;
+	width: 500px;
+	height: 595px;
+	background-color: rgb(211, 211, 183);
+	margin: 30px 60px 0;
+	border: solid rgba(96, 137, 150, 0.8) 6px;
+}
+
+#description h1 {
+	text-indent: 30px;
+}
+
+#description p {
+
+}
+
+#heading {
+	color: brown;
+	border-bottom: solid 2px;
+	font-family: cursive;
+}
+
+#sudokuImage{
+	display: block;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	left: 100px;
+	/* bottom: 10px; */
+	top: 90px;
+}

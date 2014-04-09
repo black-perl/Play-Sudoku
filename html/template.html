@@ -9,13 +9,23 @@
 </head>
 
 <body>
+	<div id="description">
+		<h1> <span id="heading">PLAY SUDOKU !! </span></h1>
+		<ul> 
+			<li> Fill the sudoku. </li>
+			<li> Press Submit </li>
+		</ul>
+		<img id= "sudokuImage" src = "../media/sudoku.png"  alt= "Sudoku Image" />
+	</div>
+
 	<div id = "containerDiv">
 	</div> <!--  container Div ends here -->
-	<!-- script should be called in the end of the body so that all the page has loaded -->
-	<script type = "text/javascript" src = "../javascript/sudokuGenerator.js"></script>
-	<script type = "text/javascript" src = "../javascript/inputValidator_and_navigator.js"></script>
-	<!-- put the summit button after the div of sudoku -->
+
 	<div>
 		<a href = "#" id = "submitButton">SUBMIT</a>
 	</div> <!-- button div -->
+	<!-- script should be called in the end of the body so that all the page has loaded -->
+	<script type = "text/javascript" src = "../javascript/sudokuGenerator.js"></script>
+	<script type = "text/javascript" src = "../javascript/inputValidator_and_navigator.js"></script>
+
 </body>
