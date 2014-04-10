@@ -42,9 +42,9 @@ document.querySelector("#containerDiv").addEventListener("keydown",function(e){
 
     var currentTextBox = document.getElementById(e.target.id);
 
-    if( e.keyCode>=49 && e.keyCode<=57 )
+    if( e.keyCode>=49 && e.keyCode<=57 || e.keyCode==8)
     {
-         
+         // continue normal behavior
     }
     else if(e.keyCode>=37 && e.keyCode<=40)
     {
