@@ -106,7 +106,7 @@ li{
 	color: brown;
 	font-size: 30px;
 	border-bottom: solid 2px;
-	font-family: cursive;
+	font-family: monospace;
 }
 
 #sudokuImage{
