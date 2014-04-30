@@ -1,10 +1,6 @@
 /*
 Generates the solution for the solved sudoku
 */
-
-var input = getValues(); // calls the function from the input generator js file
-// checkout how to do that 
-
 /* The basic idea behind the algorithm is that a loop is going on in which every possible 
 combination is filled up and the loop counting variables are same for the whole the functions.
 */
@@ -19,8 +15,6 @@ function setUnfilled(input){
         }
     }
 }
-
-setUnfilled(input);
 
 function rowCheck(input, number, current_row){
     // returns a bool depending on whether filling of an element is safe in the row 
@@ -83,13 +77,14 @@ function solveSudoku(input){
     var column;
 
     if( unfilledLocation(input) == true ){ // 1 == true works  while(1)
-        console.log("success");
+        //console.log("success");
+        return true; // sudoku has been solved Hurray!!
     }
 
     else{
 
         var locationData = unfilledLocation(input); // actual initialisation of array
-        console.log(locationData)
+        //console.log(locationData);
         row = locationData[0];
         column = locationData[1];
     }
@@ -109,3 +104,33 @@ function solveSudoku(input){
     return false;// backtracking trigger if the isSafe function return false
     
 }
+
+function putValues(input){
+    // renders the grid with the solved values
+    var targetId;
+    for(var i=1; i<=9;i++)
+    {
+        for(var j=1;j<=9;j++)
+        {   
+            targetId = 'r' + i + 'c' + j;
+            var selected = document.querySelector('#'+targetId);
+            if(selected.getAttribute("dummy") === "unsolved")
+                selected.className = "solved"; //changing the class 
+            selected.value = input[i-1][j-1];
+
+        }
+    }
+}
+
+window.onload = function(e){ //making the event to fire up on window load
+document.querySelector("#submitButton").addEventListener("click",function(e)
+    {
+        var input = getValues(); // calls the function from the input generator js file
+        // checkout how to do that 
+        setUnfilled(input);
+        solveSudoku(input);
+        putValues(input);
+    }
+    ,false);
+
+};

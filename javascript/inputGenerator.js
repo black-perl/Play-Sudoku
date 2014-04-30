@@ -17,6 +17,9 @@ function getValues(){
             targetId = 'r' + i + 'c' + j;
             //console.log(targetId);
             colData[j-1] = document.querySelector('#'+targetId).value;
+            if(colData[j-1]==''){
+                document.querySelector('#'+targetId).setAttribute('dummy','unsolved'); // setting a dummy attribute
+            }
             //console.log(document.querySelector('#'+targetId).value);
 
         }
@@ -27,11 +30,3 @@ function getValues(){
     return grid;
 }
  
-window.onload = function(e){ //making the event to fire up on window load
-document.querySelector("#submitButton").addEventListener("click",function(e)
-    {
-        console.log(getValues());
-    }
-    ,false);
-
-};

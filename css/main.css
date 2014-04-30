@@ -29,14 +29,14 @@ body .innerBoxes{
 	width: 159px;
 	display: block; /* it is default by the way */
 	float: left;
-	border: solid rgba(122, 85, 187, 0.64) ;
+	border: solid rgba(122, 85, 187, 0.64) 3px;
 }
 
 body .rootBox{
 	height: 47px;
 	width: 47px;
 	float: left;
-	border: solid rgba(122, 85, 187, 0.64) ;
+	border: solid rgba(122, 85, 187, 0.64) 3px ;
 	border-collapse: inherit; /* just check what it does */
 }
 
@@ -53,6 +53,23 @@ body .textBoxes{
 	vertical-align: middle; /* but not working with font Georgia */
 	font-family: helvetica,serif;
 	color: rgb(25, 121, 75); /* color defines text color */
+	/* padding is distance of content box from the borders */
+	padding: 0px; /* removes the margin of the textboxes from the root boxes */
+}
+
+body .solved{
+	height: 47px;
+	/* line-height: 47px; */
+	width: 47px;
+	background-color: rgba(192, 199, 112, 0.58);
+	border: none;
+	font-weight: bold;
+	font-size: 35px;
+	/* text-indent: 2px;  not require as font-align will do the job */
+	text-align: center; /* for aligning text in the middle of the text boxes */
+	vertical-align: middle; /* but not working with font Georgia */
+	font-family: helvetica,serif;
+	color: rgb(121, 51, 25); /* color defines text color */
 	/* padding is distance of content box from the borders */
 	padding: 0px; /* removes the margin of the textboxes from the root boxes */
 }
