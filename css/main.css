@@ -1,0 +1,137 @@
+/* 
+some reset css
+*/
+
+p h1 h2 h3 h4 h5 h6 body {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica,serif;
+}
+
+body{
+	background: #BB8F66;
+}
+
+
+body #containerDiv {
+	/* checking for any element with mentioned id inside the body */
+	height: 495px;
+	width: 495px;
+	border: solid rgba(122, 85, 187, 0.64)  5px;
+	position: absolute;
+	left: 700px;
+	top: 40px;
+	background-color: rgba(128, 91, 91, 0.58); /* child will inherit them */
+}
+
+body .innerBoxes{
+	height: 159px;
+	width: 159px;
+	display: block; /* it is default by the way */
+	float: left;
+	border: solid rgba(122, 85, 187, 0.64) 3px;
+}
+
+body .rootBox{
+	height: 47px;
+	width: 47px;
+	float: left;
+	border: solid rgba(122, 85, 187, 0.64) 3px ;
+	border-collapse: inherit; /* just check what it does */
+}
+
+body .textBoxes{
+	height: 47px;
+	/* line-height: 47px; */
+	width: 47px;
+	background-color: rgba(169, 169, 169, 0.58);
+	border: none;
+	font-weight: bold;
+	font-size: 35px;
+	/* text-indent: 2px;  not require as font-align will do the job */
+	text-align: center; /* for aligning text in the middle of the text boxes */
+	vertical-align: middle; /* but not working with font Georgia */
+	font-family: helvetica,serif;
+	color: rgb(25, 121, 75); /* color defines text color */
+	/* padding is distance of content box from the borders */
+	padding: 0px; /* removes the margin of the textboxes from the root boxes */
+}
+
+body .solved{
+	height: 47px;
+	/* line-height: 47px; */
+	width: 47px;
+	background-color: rgba(192, 199, 112, 0.58);
+	border: none;
+	font-weight: bold;
+	font-size: 35px;
+	/* text-indent: 2px;  not require as font-align will do the job */
+	text-align: center; /* for aligning text in the middle of the text boxes */
+	vertical-align: middle; /* but not working with font Georgia */
+	font-family: helvetica,serif;
+	color: rgb(121, 51, 25); /* color defines text color */
+	/* padding is distance of content box from the borders */
+	padding: 0px; /* removes the margin of the textboxes from the root boxes */
+}
+
+div #submitButton{
+	display: inline-block;
+	position: absolute;
+	top: 580px;
+	left: 880px;
+	background-color: #51b7e6;
+	text-align: center;
+	padding: 15px 20px;
+	color: #805575 !important;
+	text-decoration: none !important;
+	font-weight: bolder;
+	font-family: cursive;
+	font-size: 24px;
+	box-shadow: 0 1px 1px #35234D;
+	border-radius: 2px;
+	background-image: -webkit-linear-gradient(top, #51b7e6, #4dafdd);
+	margin-bottom: 20px;
+}
+
+#description
+{
+	position: absolute;
+	width: 500px;
+	height: 595px;
+	background-color: rgb(211, 211, 183);
+	margin: 30px 60px 0;
+	border: solid rgba(96, 137, 150, 0.8) 6px;
+}
+
+#description h1 {
+	text-indent: 30px;
+}
+
+#description ul {
+	font-family: cursive;
+	font-size: 25px;
+	color: rgb(25, 121, 75);
+	list-style-image: url(../media/bullet-icon.ico);
+	margin-left: 25px;
+	text-indent: 5px;
+}
+
+li{
+	margin-top: 5px;
+}
+#heading {
+	color: brown;
+	font-size: 30px;
+	border-bottom: solid 2px;
+	font-family: monospace;
+}
+
+#sudokuImage{
+	display: block;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	left: 100px;
+	/* bottom: 10px; */
+	/* top: 50px; */
+}
