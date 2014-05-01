@@ -10,4 +10,4 @@ Have Fun !!
 
 Play it [here](https://black-perl.github.io/Play-Sudoku)
 
-[BS Img]: https://github.com/black-perl/Play-Sudoku/blob/master/media/sudoku.png
+[BS Img]: https://github.com/black-perl/Play-Sudoku/blob/master/media/sudoku.png = 300*300
