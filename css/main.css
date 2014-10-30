@@ -135,3 +135,10 @@ li{
 	/* bottom: 10px; */
 	/* top: 50px; */
 }
+
+#subheading{
+	font-size: 1em;
+	color: rgb(64, 165, 42);
+	font-style: italic;
+	margin-left: 6%;
+}
