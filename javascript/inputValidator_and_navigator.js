@@ -32,6 +32,7 @@ function selectBox( id,keyCode ){
         targetId = targetId.replaceAt(3,''+(parseInt(currentId[3])+1));
         //fastest method of string conversion is adding '' 
     }
+    // ----- add the delete button functionality too ----
 
     return targetId;
 }
